@@ -1,0 +1,123 @@
+.mobile__nav__div,
+.mobile_div_sidebar {
+  display: none;
+}
+.nav__bar {
+  height: 70px;
+  background-color: #0f0326;
+  border-bottom: 2px solid white;
+  box-shadow: -1px 4px 15px #c2b2b26e;
+}
+
+.nav__links {
+  display: flex;
+  list-style: none;
+  justify-content: space-between !important;
+  padding-right: 30px;
+}
+.nav__links li {
+  padding-left: 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: white;
+}
+.nav__links > li:hover {
+  transform: scale(1.1);
+}
+.nav_cart_alignment > li:hover {
+  transform: scale(1.1);
+}
+.login_header_btn {
+  background-color: #41c485 !important;
+  font-weight: 600 !important;
+  width: 120% !important;
+  color: white !important;
+}
+
+.nav_cart_alignment {
+  display: flex !important;
+}
+
+.nav_badge_alignment {
+  margin-right: 23px;
+}
+
+.nav_badge_nonlogedin {
+  margin-right: 23px;
+  margin-top: 4px;
+}
+
+/** --mobile **/
+@media (max-width: 800px) {
+  .non__mobile__nav {
+    display: none;
+  }
+  .mobile__nav__div {
+    display: block;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .nav__links > li:last-of-type {
+    margin-left: auto !important;
+  }
+  .nav__links li {
+    padding-left: 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    cursor: pointer;
+    color: white;
+  }
+  .login_header_btn {
+    font-weight: 600 !important;
+    margin-top: -3px;
+  }
+  .icon {
+    font-size: 1.5rem;
+  }
+  .menu_bar_div {
+    margin-left: auto !important;
+  }
+  .mobile_div_sidebar {
+    display: block;
+    padding: 20px;
+    height: 100vh;
+    position: fixed;
+    z-index: 1200;
+    top: 0px;
+    left: 50%;
+    float: right;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-color: #ece9ea;
+    width: 50%;
+    color: black !important;
+  }
+
+  .close_icon {
+    color: black;
+    float: right;
+    font-size: 24px;
+    cursor: pointer;
+    margin: 11px;
+    border-bottom: 1px solid rgb(41, 2, 2);
+  }
+  .close_icon > i {
+    margin-left: auto !important;
+  }
+  .mobile__navs__links {
+    margin-top: 3rem;
+    padding: 0 !important;
+  }
+  .mobile__navs__links > li {
+    list-style: none;
+    padding: 16px;
+    border-bottom: 1px solid #353333;
+    color: black !important;
+  }
+  .mobile_div_sidebar > nav {
+    margin-top: 5rem;
+  }
+}

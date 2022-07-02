@@ -74,16 +74,13 @@ const udpateAReminder = async (_req, res) => {
           .status(500)
           .json(apiResponse(true, "Internal Server Error", error.message));
       } else {
-        let { matchedCount } = updated;
-        res
-          .status(200)
-          .json(
-            apiResponse(
-              false,
-              "Reminder updated",
-              `${matchedCount} document affected`
-            )
-          );
+        Reminder.findOne({ reminderId: reminderId }).exec(
+          (err, updatedReminder) => {
+            res
+              .status(200)
+              .json(apiResponse(false, "Reminder updated", updatedReminder));
+          }
+        );
       }
     }
   );

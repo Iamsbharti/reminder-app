@@ -1,0 +1,187 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.login-header {
+  display: flex;
+  justify-content: center;
+  padding: 58px 31px 0px 1px;
+  font-size: 43px;
+  color: #f9c846;
+}
+
+.login-form {
+  display: flex;
+  justify-content: center;
+  /* margin-top: 50px; */
+  left: 50px;
+  padding: 43px 72px 65px 72px;
+  color: #f9c846;
+}
+
+.login-block-alignment {
+  margin-bottom: 20px;
+}
+
+.login-input {
+  width: 345px !important;
+}
+.btn__div {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+.login-btn {
+  color: white !important;
+  background-color: #41c485 !important;
+  width: 40% !important;
+}
+.test-login-btn {
+  color: white !important;
+  background-color: #333035 !important;
+  width: 40% !important;
+  font-size: 24px;
+  font-weight: 600;
+}
+.login-btn:hover {
+  transform: scale(1.1);
+}
+.forgot__pwd__div {
+  margin-top: 6px !important;
+  color: black !important;
+  font-weight: 500;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+.forgot__pwd__div:hover {
+  color: red !important;
+  transform: scale(1.1) !important;
+  text-decoration-line: underline !important;
+}
+.login-forgot-pwd {
+  color: black !important;
+  font-size: 10px;
+}
+.login__response {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: green !important;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #ee2222;
+  color: white;
+  text-align: center;
+}
+.footer > p {
+  margin-top: 10px;
+}
+.footer__flag {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 16px;
+}
+.footer__flag img {
+  width: 20px;
+  height: 20px;
+}
+.register {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 20px;
+}
+.register1 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 20px;
+}
+.register2 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 20px;
+}
+.welcome-text {
+  font-size: 2.2rem;
+  font-weight: 600;
+  padding-left: 30px;
+}
+.disclaimer {
+  font-size: 0.9rem;
+  color: gray;
+}
+.submit-div {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.signup__success {
+  display: inline-block;
+  color: green;
+  transition: ease-in 2sec;
+}
+.signup__error {
+  display: inline-block;
+  color: red;
+  transition: ease-in 2sec;
+}
+.signup__content > button:hover {
+  background-color: blue;
+}
+.cancel__div__signup {
+  margin-top: -7px;
+}
+.cancel__div__signup > code {
+  display: inline-block;
+  cursor: pointer;
+  color: black;
+}
+.cancel__div__signup > code:hover {
+  transform: scale(1.1);
+  text-decoration: underline;
+}
+.auth__status {
+  display: inline-block;
+  margin-top: 10px;
+  font-weight: 900;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
