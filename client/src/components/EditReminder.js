@@ -49,6 +49,7 @@ const EditReminder = ({ updateReminderAction, reminder, user }) => {
     console.log("update::", reminderDetails);
     updateReminderAction(reminderDetails);
   };
+
   return (
     <>
       <div className="addReminder">
