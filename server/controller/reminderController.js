@@ -117,7 +117,7 @@ const mailGenerator = new Mailgen({
   product: {
     // Appears in header & footer of e-mails
     name: "Reminder App",
-    link: "https://reminder-app.com",
+    link: "https://reminder-fsd-app.herokuapp.com",
     //logo: "https://mailgen.js/img/logo.png",
     copyright: "Copyright © 2022 Reminder App. All rights reserved.",
   },
